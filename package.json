@@ -1,8 +1,16 @@
 {
   "name": "tabler-icons-astro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tabler SVG icons wrapped in Astro components",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "icons-astro"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "exports": "./generate-index.sh"

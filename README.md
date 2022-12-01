@@ -4,7 +4,7 @@ Your favorite [Tabler icons](https://github.com/tabler/tabler-icons) - now ready
 
 ![Tabler Icons](https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/og.png)
 
-Disclaimer: **<span style="color: red">I do NOT own any of these icons. All credit goes to their creator, Paweł Kuna.</span>**
+Disclaimer: **I do NOT own any of these icons. All credit goes to their creator, Paweł Kuna.** Check out the original package [here!](https://www.npmjs.com/package/@tabler/icons)
 
 ---
 

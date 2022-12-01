@@ -33,10 +33,12 @@ for FILE in $(ls icons); do
     # Substituted SVG
     cat icons/$FILE | \
         # size parameter in width
-        sed -E 's/width="[0-9]+"/width=\{size\}/' | \
+        sed -E 's/(<svg.*) width="[0-9]+"/\1 width=\{size\}/' | \
         # size parameter in height
-        sed -E 's/height="[0-9]+"/height=\{size\}/' | \
+        sed -E 's/(<svg.*) height="[0-9]+"/\1 height=\{size\}/' | \
         # strokeWidth parameter
-        sed -E 's/stroke-width="[0-9]+"/stroke-width=\{strokeWidth\}/' >> $ASTRO_FILE
+        sed -E 's/(<svg.*) stroke-width="[0-9]+"/\1 stroke-width=\{strokeWidth\}/' >> $ASTRO_FILE
+
+    echo Generated $capitalized ...
 
 done
