@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Erase file contents
-echo "" > index.js
+echo -n "" > index.js
 
 for FILE in $(ls icons-astro); do
 
