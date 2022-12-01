@@ -4,13 +4,26 @@
   "description": "Tabler SVG icons wrapped in Astro components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exports": "./generate-index.sh"
   },
   "keywords": [
     "icons",
     "astro",
+    "svg",
     "tabler"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VojtaStruhar/tabler-icons-astro.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/codecalm"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Vojtěch Struhár",
   "license": "MIT"
 }
